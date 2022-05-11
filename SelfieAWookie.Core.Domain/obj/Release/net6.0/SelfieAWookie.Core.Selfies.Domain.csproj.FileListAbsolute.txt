@@ -1,0 +1,15 @@
+C:\Users\GastonGuyot\Developpement\C#\Udemy_web_api\SelfieAWookie.API.UI\SelfieAWookie.Core.Domain\bin\Release\net6.0\SelfieAWookie.Core.Selfies.Domain.deps.json
+C:\Users\GastonGuyot\Developpement\C#\Udemy_web_api\SelfieAWookie.API.UI\SelfieAWookie.Core.Domain\bin\Release\net6.0\SelfieAWookie.Core.Selfies.Domain.dll
+C:\Users\GastonGuyot\Developpement\C#\Udemy_web_api\SelfieAWookie.API.UI\SelfieAWookie.Core.Domain\bin\Release\net6.0\SelfieAWookie.Core.Selfies.Domain.pdb
+C:\Users\GastonGuyot\Developpement\C#\Udemy_web_api\SelfieAWookie.API.UI\SelfieAWookie.Core.Domain\bin\Release\net6.0\SelfiesAWookie.Core.Framework.dll
+C:\Users\GastonGuyot\Developpement\C#\Udemy_web_api\SelfieAWookie.API.UI\SelfieAWookie.Core.Domain\bin\Release\net6.0\SelfiesAWookie.Core.Framework.pdb
+C:\Users\GastonGuyot\Developpement\C#\Udemy_web_api\SelfieAWookie.API.UI\SelfieAWookie.Core.Domain\obj\Release\net6.0\SelfieAWookie.Core.Selfies.Domain.csproj.AssemblyReference.cache
+C:\Users\GastonGuyot\Developpement\C#\Udemy_web_api\SelfieAWookie.API.UI\SelfieAWookie.Core.Domain\obj\Release\net6.0\SelfieAWookie.Core.Selfies.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\GastonGuyot\Developpement\C#\Udemy_web_api\SelfieAWookie.API.UI\SelfieAWookie.Core.Domain\obj\Release\net6.0\SelfieAWookie.Core.Selfies.Domain.AssemblyInfoInputs.cache
+C:\Users\GastonGuyot\Developpement\C#\Udemy_web_api\SelfieAWookie.API.UI\SelfieAWookie.Core.Domain\obj\Release\net6.0\SelfieAWookie.Core.Selfies.Domain.AssemblyInfo.cs
+C:\Users\GastonGuyot\Developpement\C#\Udemy_web_api\SelfieAWookie.API.UI\SelfieAWookie.Core.Domain\obj\Release\net6.0\SelfieAWookie.Core.Selfies.Domain.csproj.CoreCompileInputs.cache
+C:\Users\GastonGuyot\Developpement\C#\Udemy_web_api\SelfieAWookie.API.UI\SelfieAWookie.Core.Domain\obj\Release\net6.0\SelfieAWookie.Core.Selfies.Domain.csproj.CopyComplete
+C:\Users\GastonGuyot\Developpement\C#\Udemy_web_api\SelfieAWookie.API.UI\SelfieAWookie.Core.Domain\obj\Release\net6.0\SelfieAWookie.Core.Selfies.Domain.dll
+C:\Users\GastonGuyot\Developpement\C#\Udemy_web_api\SelfieAWookie.API.UI\SelfieAWookie.Core.Domain\obj\Release\net6.0\refint\SelfieAWookie.Core.Selfies.Domain.dll
+C:\Users\GastonGuyot\Developpement\C#\Udemy_web_api\SelfieAWookie.API.UI\SelfieAWookie.Core.Domain\obj\Release\net6.0\SelfieAWookie.Core.Selfies.Domain.pdb
+C:\Users\GastonGuyot\Developpement\C#\Udemy_web_api\SelfieAWookie.API.UI\SelfieAWookie.Core.Domain\obj\Release\net6.0\ref\SelfieAWookie.Core.Selfies.Domain.dll

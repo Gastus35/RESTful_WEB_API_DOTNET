@@ -1,0 +1,12 @@
+C:\Users\GastonGuyot\Developpement\C#\Udemy_web_api\SelfieAWookie.API.UI\SelfiesAWookie.Core.Framework\bin\Debug\net6.0\SelfiesAWookie.Core.Framework.deps.json
+C:\Users\GastonGuyot\Developpement\C#\Udemy_web_api\SelfieAWookie.API.UI\SelfiesAWookie.Core.Framework\bin\Debug\net6.0\SelfiesAWookie.Core.Framework.dll
+C:\Users\GastonGuyot\Developpement\C#\Udemy_web_api\SelfieAWookie.API.UI\SelfiesAWookie.Core.Framework\bin\Debug\net6.0\SelfiesAWookie.Core.Framework.pdb
+C:\Users\GastonGuyot\Developpement\C#\Udemy_web_api\SelfieAWookie.API.UI\SelfiesAWookie.Core.Framework\obj\Debug\net6.0\SelfiesAWookie.Core.Framework.csproj.AssemblyReference.cache
+C:\Users\GastonGuyot\Developpement\C#\Udemy_web_api\SelfieAWookie.API.UI\SelfiesAWookie.Core.Framework\obj\Debug\net6.0\SelfiesAWookie.Core.Framework.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\GastonGuyot\Developpement\C#\Udemy_web_api\SelfieAWookie.API.UI\SelfiesAWookie.Core.Framework\obj\Debug\net6.0\SelfiesAWookie.Core.Framework.AssemblyInfoInputs.cache
+C:\Users\GastonGuyot\Developpement\C#\Udemy_web_api\SelfieAWookie.API.UI\SelfiesAWookie.Core.Framework\obj\Debug\net6.0\SelfiesAWookie.Core.Framework.AssemblyInfo.cs
+C:\Users\GastonGuyot\Developpement\C#\Udemy_web_api\SelfieAWookie.API.UI\SelfiesAWookie.Core.Framework\obj\Debug\net6.0\SelfiesAWookie.Core.Framework.csproj.CoreCompileInputs.cache
+C:\Users\GastonGuyot\Developpement\C#\Udemy_web_api\SelfieAWookie.API.UI\SelfiesAWookie.Core.Framework\obj\Debug\net6.0\SelfiesAWookie.Core.Framework.dll
+C:\Users\GastonGuyot\Developpement\C#\Udemy_web_api\SelfieAWookie.API.UI\SelfiesAWookie.Core.Framework\obj\Debug\net6.0\refint\SelfiesAWookie.Core.Framework.dll
+C:\Users\GastonGuyot\Developpement\C#\Udemy_web_api\SelfieAWookie.API.UI\SelfiesAWookie.Core.Framework\obj\Debug\net6.0\SelfiesAWookie.Core.Framework.pdb
+C:\Users\GastonGuyot\Developpement\C#\Udemy_web_api\SelfieAWookie.API.UI\SelfiesAWookie.Core.Framework\obj\Debug\net6.0\ref\SelfiesAWookie.Core.Framework.dll

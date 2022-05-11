@@ -1,0 +1,107 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "SelfiesAWookie.Core.Framework/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/SelfiesAWookie.Core.Framework.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SelfiesAWookie.Core.Framework.dll": {}
+        }
+      }
+    },
+    "net6.0/win-x64": {
+      "SelfiesAWookie.Core.Framework/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/SelfiesAWookie.Core.Framework.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SelfiesAWookie.Core.Framework.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SelfiesAWookie.Core.Framework/1.0.0": {
+      "type": "project",
+      "path": "../SelfiesAWookie.Core.Framework/SelfiesAWookie.Core.Framework.csproj",
+      "msbuildProject": "../SelfiesAWookie.Core.Framework/SelfiesAWookie.Core.Framework.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "SelfiesAWookie.Core.Framework >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\GastonGuyot\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\GastonGuyot\\Developpement\\C#\\Udemy_web_api\\SelfieAWookie.API.UI\\SelfieAWookie.Core.Domain\\SelfieAWookie.Core.Selfies.Domain.csproj",
+      "projectName": "SelfieAWookie.Core.Selfies.Domain",
+      "projectPath": "C:\\Users\\GastonGuyot\\Developpement\\C#\\Udemy_web_api\\SelfieAWookie.API.UI\\SelfieAWookie.Core.Domain\\SelfieAWookie.Core.Selfies.Domain.csproj",
+      "packagesPath": "C:\\Users\\GastonGuyot\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\GastonGuyot\\Developpement\\C#\\Udemy_web_api\\SelfieAWookie.API.UI\\SelfieAWookie.Core.Domain\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\GastonGuyot\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "C:\\Users\\GastonGuyot\\Developpement\\C#\\Udemy_web_api\\SelfieAWookie.API.UI\\SelfiesAWookie.Core.Framework\\SelfiesAWookie.Core.Framework.csproj": {
+              "projectPath": "C:\\Users\\GastonGuyot\\Developpement\\C#\\Udemy_web_api\\SelfieAWookie.API.UI\\SelfiesAWookie.Core.Framework\\SelfiesAWookie.Core.Framework.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+      }
+    },
+    "runtimes": {
+      "win-x64": {
+        "#import": []
+      }
+    }
+  }
+}
