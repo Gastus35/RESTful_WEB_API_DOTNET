@@ -19,14 +19,16 @@ namespace SelfieAWookie.API.UI.Controllers
         private readonly SecurityOptions _option;
         private readonly UserManager<IdentityUser> _userManager;
         private readonly IConfiguration _configuration;
+        private readonly ILogger<AuthenticateController> _logger;
         #endregion
 
         #region Constructors
-        public AuthenticateController(UserManager<IdentityUser> userManager, IConfiguration configuration, IOptions<SecurityOptions> option)
+        public AuthenticateController(ILogger<AuthenticateController> logger, UserManager<IdentityUser> userManager, IConfiguration configuration, IOptions<SecurityOptions> option)
         {
             this._userManager = userManager;
             this._configuration = configuration;
             this._option = option.Value;
+            this._logger = logger;
         }
         #endregion
 
@@ -53,23 +55,34 @@ namespace SelfieAWookie.API.UI.Controllers
 
 
         [HttpPost]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> Login([FromBody]AuthenticateUserDto authenticateUserDto)
         {
             IActionResult result = this.BadRequest();
 
-            var user = await this._userManager.FindByEmailAsync(authenticateUserDto.Login);
-            if (user != null)
+            try
             {
-                var verif = await this._userManager.CheckPasswordAsync(user, authenticateUserDto.Password);
-                if (verif)
+                this._logger.LogDebug("This is a test");
+                var user = await this._userManager.FindByEmailAsync(authenticateUserDto.Login);
+                if (user != null)
                 {
-                    result = this.Ok(new AuthenticateUserDto()
+                    var verif = await this._userManager.CheckPasswordAsync(user, authenticateUserDto.Password);
+                    if (verif)
                     {
-                        Login = user.Email,
-                        Name = user.UserName,
-                        Token = this.GenerateJwtToken(user)
-                    }); ;
+                        result = this.Ok(new AuthenticateUserDto()
+                        {
+                            Login = user.Email,
+                            Name = user.UserName,
+                            Token = this.GenerateJwtToken(user)
+                        }); ;
+                    }
                 }
+            } catch (Exception ex)
+            {
+                this._logger.LogError("Test error log", ex, authenticateUserDto);
+                result = this.Problem("Test error log");
             }
 
             return result;

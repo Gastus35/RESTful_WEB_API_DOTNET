@@ -60,11 +60,6 @@
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
-      },
-      "runtimes": {
-        "win-x64": {
-          "#import": []
-        }
       }
     },
     "C:\\Users\\GastonGuyot\\Developpement\\C#\\Udemy_web_api\\SelfieAWookie.API.UI\\SelfiesAWookie.Core.Framework\\SelfiesAWookie.Core.Framework.csproj": {
@@ -118,11 +113,6 @@
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
-        }
-      },
-      "runtimes": {
-        "win-x64": {
-          "#import": []
         }
       }
     }

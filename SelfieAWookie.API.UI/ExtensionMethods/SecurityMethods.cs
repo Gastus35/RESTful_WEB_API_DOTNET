@@ -12,10 +12,11 @@ namespace SelfieAWookie.API.UI.ExtensionMethods
         #endregion
 
         #region Public methods
-        public static void AddCustomSecurity(this IServiceCollection services, IConfiguration configuration)
+        public static IServiceCollection AddCustomSecurity(this IServiceCollection services, IConfiguration configuration)
         {
             AddCustomCors(services, configuration);
             AddCustomAuthentication(services, configuration);
+            return services;
         }
 
         public static void AddCustomCors(this IServiceCollection services, IConfiguration configuration)

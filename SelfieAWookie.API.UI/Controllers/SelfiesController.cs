@@ -6,6 +6,9 @@ using Microsoft.EntityFrameworkCore;
 using SelfieAWookie.API.UI.Application.DTOs;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using MediatR;
+using SelfieAWookie.API.UI.Application.Queries;
+using SelfieAWookie.API.UI.Application.Commands;
 
 namespace SelfieAWookie.API.UI.Controllers
 {
@@ -15,13 +18,15 @@ namespace SelfieAWookie.API.UI.Controllers
     public class SelfiesController : ControllerBase
     {
         #region Fields
+        private readonly IMediator _mediator;
         private readonly ISelfieRepository _repository;
         private readonly IWebHostEnvironment _webHostEnvironment;
         #endregion
 
         #region Constructors
-        public SelfiesController(ISelfieRepository repository, IWebHostEnvironment webHostEnvironment)
+        public SelfiesController(IMediator mediator, ISelfieRepository repository, IWebHostEnvironment webHostEnvironment)
         {
+            this._mediator = mediator;
             this._repository = repository;
             this._webHostEnvironment = webHostEnvironment;
         }
@@ -31,8 +36,11 @@ namespace SelfieAWookie.API.UI.Controllers
         [HttpGet]
         public IActionResult GetAll([FromQuery] int wookieId = 0)
         {
-            var selfiesList = _repository.GetAll(wookieId);
-            var model = selfiesList.Select(item => new SelfieResumeDto() {Title = item.Title, WookieId = item.WookieId, NbSelfiesFromWookie = (item.Wookie?.Selfies?.Count).GetValueOrDefault(0)}).ToList();
+            //var selfiesList = _repository.GetAll(wookieId);
+            //var model = selfiesList.Select(item => new SelfieResumeDto() {Title = item.Title, WookieId = item.WookieId, NbSelfiesFromWookie = (item.Wookie?.Selfies?.Count).GetValueOrDefault(0)}).ToList();
+
+            var model = this._mediator.Send(new SelectAllSelfiesQuery() { WookieId = wookieId});
+            
             return this.Ok(model);
         }
 
@@ -58,22 +66,15 @@ namespace SelfieAWookie.API.UI.Controllers
         }
 
         [HttpPost]
-        public IActionResult AddOne(SelfieDto selfieDto)
+        public async Task<IActionResult> AddOne(SelfieDto selfieDto)
         {
             IActionResult result = BadRequest();
-            Selfie addSelfie = this._repository.AddOne(new Selfie()
-            {
-                Title = selfieDto.Title,
-                ImagePath = selfieDto.ImagePath,
-            }); ;
-            this._repository.UnitOfWork.SaveChanges();
 
-            if (addSelfie != null)
+            var item = await this._mediator.Send(new AddSelfieCommand() { Item = selfieDto});
+            if (item != null)
             {
-                selfieDto.Id = addSelfie.Id;
-                result = this.Ok(selfieDto);
+                result = this.Ok(item);
             }
-
             return result;
         }
         #endregion

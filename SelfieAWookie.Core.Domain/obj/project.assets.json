@@ -12,18 +12,6 @@
           "bin/placeholder/SelfiesAWookie.Core.Framework.dll": {}
         }
       }
-    },
-    "net6.0/win-x64": {
-      "SelfiesAWookie.Core.Framework/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/SelfiesAWookie.Core.Framework.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/SelfiesAWookie.Core.Framework.dll": {}
-        }
-      }
     }
   },
   "libraries": {
@@ -96,11 +84,6 @@
           }
         },
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
-      }
-    },
-    "runtimes": {
-      "win-x64": {
-        "#import": []
       }
     }
   }
